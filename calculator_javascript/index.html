@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width">
+        <link rel="stylesheet" href="index.css">
+        <Title>Calculator</Title>
+    </head>
+    <body>
+        <div class="calculator-container">
+            <div class="calculator-iphone">
+                <!--display result-->
+                <div class="calculator-input-display">
+                    <textarea cols="40" rows="7" id="calculator-input-number-previews"></textarea>
+                    <input type="text" id="calculator-input-number">
+                </div>
+
+                <!--Calculator buttons-->
+                <div class="button">
+                    <!--left-->
+                    <div class="button_left3">
+                        <!--left - top -->
+                        <div class="button_left3_top">
+
+                            <div class="button_top" id="calculator-input-ac">AC</div>
+                            <div class="button_top" onclick="display('+/-')">+/-</div>
+                            <div class="button_top" onclick="display('%')">%</div>
+                        </div>
+                        <div class="button_left_number">
+                            <div class="button_number" onclick="display('7')">7</div>
+                            <div class="button_number" onclick="display('8')">8</div>
+                            <div class="button_number" onclick="display('9')">9</div>
+
+                            <div class="button_number" onclick="display('4')">4</div>
+                            <div class="button_number" onclick="display('5')">5</div>
+                            <div class="button_number" onclick="display('6')">6</div>
+
+                            <div class="button_number" onclick="display('1')">1</div>
+                            <div class="button_number" onclick="display('2')">2</div>
+                            <div class="button_number" onclick="display('3')">3</div>
+
+                        </div>
+
+                        <div class="button_left3_bottom">
+                            <div class="button_bottom" id="button_bottom_zero" onclick="display('0')">0</div>
+                            <div class="button_bottom" onclick="display('.')">.</div>
+                        </div>
+                    </div>
+
+                    <!--right-->
+                    <div class="button_right">
+                        <div class="button_orange" onclick="display('/')">&divide;</div>
+                        <div class="button_orange" onclick="display('*')">×</div>
+                        <div class="button_orange" onclick="display('-')">-</div>
+                        <div class="button_orange" onclick="display('+')">+</div>
+                    <!--answer button-->
+                        <div class="button_orange" onclick="displaySolve()">=</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

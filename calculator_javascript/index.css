@@ -1,0 +1,144 @@
+body{
+    background-color: white;
+}
+
+.calculator-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.calculator-iphone{
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(0,0,0,1)
+}
+
+.calculator-input-display
+{
+    width: 288px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator-input-number-previews{
+    width: 275px;
+    height: 100%;
+    outline: none;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    overflow-y: hidden;
+    text-align: right;
+    resize: none;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px 0px 0px 0px;
+    color: #dbd8d3;
+}
+
+#calculator-input-number{
+    width: 275px;
+    height: 100px;
+    outline: none;
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-size: 50px;
+    overflow-y: hidden;
+    text-align: right;
+    resize: none;
+}
+
+/*BUTTONS*/
+
+.button
+{
+    display: flex;
+    flex-direction: row;
+}
+/*oreintation of buttons*/
+.button_left3_top{
+    display: flex; 
+    flex-direction: row;
+}
+
+.button_left_number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 218px;
+    color: white;
+}
+
+.button_left3_bottom{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.button_right{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+/*designing of buttons*/
+.button_top,
+.button_number,
+.button_bottom
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 5px;
+}
+
+/*adding colors to buttons*/
+.button_top{
+    background-color: rgb(224,240,255);
+}
+
+.button_number{
+    background-color: rgb(145,145,145);
+}
+
+.button_bottom{
+    background-color: rgb(145,145,145);
+}
+
+#button_bottom_zero{
+    width: 130px;
+    align-items: left;
+    text-align: left;
+}
+
+.button_orange{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 5px;
+    background-color: orange;
+}
+
